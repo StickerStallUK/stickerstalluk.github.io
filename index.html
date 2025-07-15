@@ -9,10 +9,17 @@
       background-color: #000;
       color: #00ff00;
       font-family: 'Courier New', Courier, monospace;
-      padding: 2rem;
+      padding: 5vw;
       line-height: 1.6;
-      font-size: 1rem;
+      font-size: 4vw;
       text-shadow: 0 0 5px #00ff00;
+    }
+
+    @media (min-width: 768px) {
+      body {
+        font-size: 1rem;
+        padding: 2rem;
+      }
     }
 
     header, footer {
@@ -29,6 +36,20 @@
       padding-bottom: 0;
     }
 
+    nav {
+      border-bottom: 1px dashed #00ff00;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    nav a {
+      color: #00ff00;
+      text-decoration: underline;
+      margin-right: 2rem;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+
     p {
       margin-bottom: 1rem;
     }
@@ -41,6 +62,15 @@
     .socials {
       white-space: pre-wrap;
     }
+
+    section {
+      margin-top: 2rem;
+    }
+
+    h2 {
+      border-bottom: 1px dashed #00ff00;
+      padding-bottom: 0.25rem;
+    }
   </style>
 </head>
 <body>
@@ -48,10 +78,24 @@
     <h1>UKStickerStall</h1>
   </header>
 
+  <nav>
+    <a href="#event-organisers">Info for Event Organisers</a>
+    <a href="#sticker-donators">Info for Sticker Donators</a>
+    <a href="#events-helped">Events and Charities We've Helped</a>
+  </nav>
+
+  <p class="socials">
+    Socials:
+    - Twitter
+    - BlueSky
+    - Mastodon
+    - LinkedIn
+  </p>
+
   <main>
     <p>
-      UKStickerStall has its origins with Scott Helme, who had the idea to supplement the former SteelCon Charity Bring & Buy table with a large collection of stickers (donated by both vendors and hackers), allowing attendees to obtain stickers in return for charitable donations.
-      Over the years, it grew, hit the road, and began appearing at many UK Cyber Community events.
+      UKStickerStall has its origins with Scott Helm, who had the idea to supplement the former SteelCon Charity Bring & Buy table with a large collection of stickers (donated by both vendors and hackers), allowing attendees to obtain stickers in return for charitable donations.
+      Over the years, it grew, hit the road, and began appearing at many UK cyber community events.
     </p>
 
     <p>
@@ -59,17 +103,43 @@
       All we ask is that you let us know how much you raised, so we can highlight the generosity of our community.
     </p>
 
-    <p>
-      If you want to donate stickers, either hand them over to the sticker stall at an event, or contact one of our social media accounts for a postal address.
-    </p>
+    <section id="event-organisers">
+      <h2>Info for Event Organisers</h2>
+      <p>
+        Making sure the stickers end up in the right place is managed via the BSidesUK & Eire Discord server (in #stickerstall). If you want it, please reach out to someone in there. 
+        There is no specific owner of the box, but several volunteers coordinate its travel. 
+        There is an expectation that your event will play an active part in collecting it from the previous event, and ensuring it gets to the next one.
+      </p>
 
-    <p class="socials">
-      Socials:
-      - Twitter
-      - BlueSky
-      - Mastodon
-      - LinkedIn
-    </p>
+      <p>
+        Unlike previous iterations of the sticker stall, all we do is help arrange its travel and try to keep it topped up. 
+        What you do with it, how much you charge, how you manage donations, Gift Aid, and cash, and who works the stall, is entirely up to you. 
+        But remember, it's a community thing, for the good of the whole community. Try to leave it as good as you found it, if not better.
+      </p>
+
+      <p>
+        We strongly encourage you to solicit new stickers and other swag, both from vendors and other attendees. 
+        For non-sticker items, consider whether someone would actually pay for it (avoid bundles of 1,000 lanyards with just a sponsor’s name, for example). 
+        Also, avoid anything perishable or messy.
+      </p>
+    </section>
+
+    <section id="sticker-donators">
+      <h2>Info for Sticker Donators</h2>
+      <p>
+        We love new stickers, not just from hackers, but from vendors too! 
+        Ideally, hand them to whoever is working the stall at a UK event, but if that's not possible, reach out on social media for a postal address. 
+        We also usually have volunteers at many major European events and at Hacker Summer Camp (Black Hat, BSides Las Vegas, DefCon) in the US.
+      </p>
+    </section>
+
+    <section id="events-helped">
+      <h2>Events and Charities We've Helped</h2>
+      <p>
+        ...an incomplete list. (If you remember the stall at an event you've attended or organised that isn’t listed, please let us know.)
+      </p>
+      <img src="spreadsheet.png" alt="List of events and charities supported">
+    </section>
   </main>
 
   <footer>
